@@ -8,7 +8,7 @@ export const useSignup=()=>{
     const signup=async(email,password)=>{
         setIsLoading(true);
         setError(null);
-        const response=await fetch('http://localhost:4000/api/user/signup',{
+        const response=await fetch('https://backend-topaz-kappa.vercel.app/api/user/signup',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
