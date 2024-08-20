@@ -1,70 +1,28 @@
-/* Navbar container */
+/* Navbar.css */
+
 .navbar {
-    background-color: #333;
+    width: 100%;
+    background-color: #4a90e2;
+    padding:10px 0px;
     color: white;
-    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  /* Title styling */
-  .navbar h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  /* Auth section in the navbar */
-  .navbar .auth {
+}
+.auth{
     display: flex;
-    align-items: center;
-  }
-  
-  .navbar .auth h4 {
-    margin: 0 10px 0 0;
-    font-size: 18px;
-  }
-  
-  /* Login and Signup links */
-  .navbar .auth h3 {
-    margin: 0;
-    font-size: 18px;
+    gap:10px;
+    padding-right: 10px;
+    
+}
+.login-d{
     text-decoration: none;
-    color: white;
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  
-  .navbar .auth h3:hover {
-    color: #ddd;
-  }
-  
-  /* Logout button */
-  .navbar .auth button {
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  .navbar .auth button:hover {
-    background-color: #c9302c;
-  }
-  
-  /* Responsive design for mobile devices */
-  @media (max-width: 768px) {
-    .navbar h1 {
-      font-size: 20px;
-    }
-  
-    .navbar .auth h3 {
-      font-size: 16px;
-      margin-right: 10px;
-    }
-  
-    .navbar .auth button {
-      padding: 8px 12px;
-    }
-  }
-  
+}
+.navbar h1,h3{
+    text-decoration: none;
+    padding-left: 10px;
+    color:white;
+}
+
