@@ -24,7 +24,7 @@ const Home = () => {
     if (user && user.token) {
       setError("")
       axios
-      .get("https://crudappbd.vercel.app/api/studentdetailsRoute/", {
+      .get("https://backend-topaz-kappa.vercel.app/api/studentdetailsRoute/", {
         headers: {
           "Content-Type": "application/json",   // Missing comma added here
           Authorization: `Bearer ${user.token}`, // Ensure user.token is not null/undefined
@@ -55,7 +55,7 @@ const Home = () => {
     if (editingUser) {
       axios
         .patch(
-          "https://crudappbd.vercel.app/api/studentdetailsRoute/" + editingUser._id,
+          "https://backend-topaz-kappa.vercel.app/api/studentdetailsRoute/" + editingUser._id,
           formData,{
             headers: {
               Authorization: `Bearer ${user.token}`, // Add the token here
@@ -83,7 +83,7 @@ const Home = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete("https://crudappbd.vercel.app/api/studentdetailsRoute/" + id,{
+      .delete("https://backend-topaz-kappa.vercel.app/api/studentdetailsRoute/" + id,{
         headers: {
           Authorization: `Bearer ${user.token}`, // Add the token here
         },})
@@ -108,7 +108,7 @@ const Home = () => {
 
   const handleCreate = () => {
     axios
-      .post("https://crudappbd.vercel.app/api/studentdetailsRoute/", formData,{
+      .post("https://backend-topaz-kappa.vercel.app/api/studentdetailsRoute/", formData,{
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${user.token}`, // Add the token here
