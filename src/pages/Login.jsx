@@ -17,8 +17,11 @@ const Login = () => {
         <>
             <Navbar />
             <div className="container">
+            
+            
             <form className="login" onSubmit={handleSubmit}>
                 <h3>Login</h3>
+                {error && <h4 className="error">The error : {error}</h4>}
                 <label>Email:</label>
                 <input 
                     type="email" 
@@ -34,7 +37,7 @@ const Login = () => {
                 <button disabled={isLoading}>Login</button>
                 
             </form>
-            {error && <h3 className="error">The error : {error}</h3>}
+            
             </div>
         </>
     );
